@@ -1,40 +1,23 @@
-const express = require('express')
-const app = express() 
+const express = require("express");
+const models = require("./models");
+const app = express();
 
-app.use(express.json())
+// JSON middleware (parsing application/json)
+app.use(express.json());
 
-const movies = [{title: 'Lord of the Rings', genre: 'Fiction'}, {title: 'Finding Nemo', genre: 'Kids'}]
+app.post("/register", (req, res) => {
+  const { username, password } = req.body;
 
-app.get('/', (req, res) => {
-    res.send('ROOT')
-})
+  //create a new user
+  const newUser = models.User.create({
+    username: username,
+    password: password,
+  })
 
-app.get('/hello', (req, res) => {
-    res.json({ message: 'Hello World' })
-})
+  res.status(201).json({ message: "User registered successfully", user: newUser });
+});
 
-app.get('/movies', (req, res) => {
-    res.json(movies)
-})
-
-app.post('/movies', (req, res) => {
-    console.log(req.body) // print the request body to the console
-    const { title, genre } = req.body 
-    res.send('OK')
-})
-
-app.get('/movies/:genre', (req, res) => {
-    const genre = req.params.genre
-    res.json(movies.filter(movie => movie.genre.toLowerCase() == genre.toLowerCase())) 
-})
-
-app.get('/movies/:genre/year/:year', (req, res) => {
-    const genre = req.params.genre
-    const year = parseInt(req.params.year) 
-    res.send(`You selected ${genre} and the year is ${year}`)
-})
-
-// start the server 
+// start the server
 app.listen(8080, () => {
-    console.log('Server is running.')
-})
+  console.log("Server is running.");
+});
