@@ -18,6 +18,7 @@ app.get('/movies', (req, res) => {
 })
 
 app.post('/movies', (req, res) => {
+    console.log(req.body) // print the request body to the console
     const { title, genre } = req.body 
     res.send('OK')
 })
