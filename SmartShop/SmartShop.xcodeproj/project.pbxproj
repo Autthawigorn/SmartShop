@@ -29,6 +29,32 @@
 		7D5040152EAE6276004D9BB2 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D50401C2EAE7723004D9BB2 /* Exceptions for "Screens" folder in "SmartShop" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RegistrationScreen.swift,
+			);
+			target = 7D25CC0A2EA6861D001E3F49 /* SmartShop */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7D5040192EAE76EB004D9BB2 /* Screens */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D50401C2EAE7723004D9BB2 /* Exceptions for "Screens" folder in "SmartShop" target */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7D50401D2EAE7BE1004D9BB2 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		7D25CC082EA6861D001E3F49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -83,6 +109,8 @@
 		7D5040092EAE4855004D9BB2 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				7D50401D2EAE7BE1004D9BB2 /* Extensions */,
+				7D5040192EAE76EB004D9BB2 /* Screens */,
 				7D5040142EAE6229004D9BB2 /* Models */,
 				7D5040112EAE5EDE004D9BB2 /* Utils */,
 				7D5040052EAE4855004D9BB2 /* Environment Values */,
@@ -125,6 +153,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7D50401D2EAE7BE1004D9BB2 /* Extensions */,
 			);
 			name = SmartShop;
 			packageProductDependencies = (
