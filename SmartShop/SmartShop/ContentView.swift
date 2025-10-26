@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.authenticationController) private var authenicationController
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
