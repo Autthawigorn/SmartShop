@@ -5,7 +5,7 @@
 //  Created by Autthawigorn Yortpiboot on 26/10/2568 BE.
 //
 
-import Foundation
+//import Foundation
 import SwiftUI
 
 private struct AuthenticationEnvironmentKey: EnvironmentKey {

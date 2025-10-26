@@ -13,6 +13,8 @@
 		7D50400D2EAE4855004D9BB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040072EAE4855004D9BB2 /* ContentView.swift */; };
 		7D50400E2EAE4855004D9BB2 /* SmartShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040082EAE4855004D9BB2 /* SmartShopApp.swift */; };
 		7D5040102EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50400F2EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift */; };
+		7D5040132EAE5EF6004D9BB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040122EAE5EF6004D9BB2 /* Constants.swift */; };
+		7D5040162EAE6276004D9BB2 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040152EAE6276004D9BB2 /* DTOs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		7D5040072EAE4855004D9BB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D5040082EAE4855004D9BB2 /* SmartShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShopApp.swift; sourceTree = "<group>"; };
 		7D50400F2EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEnvironmentKey.swift; sourceTree = "<group>"; };
+		7D5040122EAE5EF6004D9BB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D5040152EAE6276004D9BB2 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		7D5040092EAE4855004D9BB2 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				7D5040142EAE6229004D9BB2 /* Models */,
+				7D5040112EAE5EDE004D9BB2 /* Utils */,
 				7D5040052EAE4855004D9BB2 /* Environment Values */,
 				7D5040022EAE4855004D9BB2 /* Clients */,
 				7D5040042EAE4855004D9BB2 /* Controllers */,
@@ -87,6 +93,22 @@
 				7D5040082EAE4855004D9BB2 /* SmartShopApp.swift */,
 			);
 			path = SmartShop;
+			sourceTree = "<group>";
+		};
+		7D5040112EAE5EDE004D9BB2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7D5040122EAE5EF6004D9BB2 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D5040142EAE6229004D9BB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D5040152EAE6276004D9BB2 /* DTOs.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +185,11 @@
 			files = (
 				7D50400B2EAE4855004D9BB2 /* HTTPClient.swift in Sources */,
 				7D50400C2EAE4855004D9BB2 /* AuthenticationController.swift in Sources */,
+				7D5040162EAE6276004D9BB2 /* DTOs.swift in Sources */,
 				7D50400D2EAE4855004D9BB2 /* ContentView.swift in Sources */,
 				7D5040102EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift in Sources */,
 				7D50400E2EAE4855004D9BB2 /* SmartShopApp.swift in Sources */,
+				7D5040132EAE5EF6004D9BB2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
