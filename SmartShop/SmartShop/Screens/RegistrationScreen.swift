@@ -9,16 +9,32 @@ import SwiftUI
 
 struct RegistrationScreen: View {
     @Environment(\.authenticationController) private var authenticationController
+    @Environment(\.dismiss) private var dismiss
     
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var message: String = ""
     
     private var isFormValid: Bool {
         !username.isEmptyOrWhitespace && !password.isEmptyOrWhitespace
     }
     
     private func register() async {
-        
+        do {
+            let response = try await authenticationController.register(username: username, password: password)
+            log("reponse นะจ๊ะ \(response)")
+            
+            if response.success {
+                // ✅ Only clear when successful
+                username = ""
+                password = ""
+                dismiss()
+            } else {
+                message = response.message ?? ""
+            }
+        } catch {
+            message = error.localizedDescription
+        }
     }
     
     var body: some View {
@@ -30,8 +46,15 @@ struct RegistrationScreen: View {
                 Task {
                     await register()
                 }
-            }.disabled(!isFormValid)
-        }.navigationTitle("Register")
+            }
+            .disabled(!isFormValid)
+            .alert("Error", isPresented: .constant(!message.isEmpty)) {
+                Button("OK", role: .cancel) { message = "" }
+            } message: {
+                Text(message)
+            }
+        }
+        .navigationTitle("Register")
     }
 }
 

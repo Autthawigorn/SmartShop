@@ -15,6 +15,7 @@
 		7D5040102EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50400F2EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift */; };
 		7D5040132EAE5EF6004D9BB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040122EAE5EF6004D9BB2 /* Constants.swift */; };
 		7D5040162EAE6276004D9BB2 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040152EAE6276004D9BB2 /* DTOs.swift */; };
+		7D50402B2EAFB821004D9BB2 /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D50402A2EAFB821004D9BB2 /* DebugHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7D50400F2EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEnvironmentKey.swift; sourceTree = "<group>"; };
 		7D5040122EAE5EF6004D9BB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7D5040152EAE6276004D9BB2 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
+		7D50402A2EAFB821004D9BB2 /* DebugHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -109,6 +111,7 @@
 		7D5040092EAE4855004D9BB2 /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				7D5040292EAFB7F2004D9BB2 /* Helper */,
 				7D50401D2EAE7BE1004D9BB2 /* Extensions */,
 				7D5040192EAE76EB004D9BB2 /* Screens */,
 				7D5040142EAE6229004D9BB2 /* Models */,
@@ -137,6 +140,14 @@
 				7D5040152EAE6276004D9BB2 /* DTOs.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7D5040292EAFB7F2004D9BB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7D50402A2EAFB821004D9BB2 /* DebugHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				7D50400C2EAE4855004D9BB2 /* AuthenticationController.swift in Sources */,
 				7D5040162EAE6276004D9BB2 /* DTOs.swift in Sources */,
 				7D50400D2EAE4855004D9BB2 /* ContentView.swift in Sources */,
+				7D50402B2EAFB821004D9BB2 /* DebugHelper.swift in Sources */,
 				7D5040102EAE48AF004D9BB2 /* AuthenticationEnvironmentKey.swift in Sources */,
 				7D50400E2EAE4855004D9BB2 /* SmartShopApp.swift in Sources */,
 				7D5040132EAE5EF6004D9BB2 /* Constants.swift in Sources */,
